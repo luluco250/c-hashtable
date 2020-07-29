@@ -27,6 +27,7 @@ int main() {
 	return try_free_table(&table) ? EXIT_SUCCESS : EXIT_FAILURE;
 }
 
+// TODO: Implement an *actual* hash function.
 size_t hash_function(const HashTable* table, const char* str) {
 	size_t index = 0;
 
