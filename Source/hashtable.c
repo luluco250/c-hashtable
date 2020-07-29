@@ -157,6 +157,7 @@ HashTableResult HashTable_try_get_value(
 	return HashTableResult_EntryNotFound;
 }
 
+// TODO: Implement collision handling.
 HashTableResult HashTable_default_collision(
 	const HashTable* table,
 	const HashTableEntry* entry
