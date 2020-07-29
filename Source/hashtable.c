@@ -145,8 +145,6 @@ HashTableResult HashTable_try_get_value(
 	size_t index = table->hash_function(table, key);
 	HashTableEntry* entry = table->entries[index];
 
-	printf("index: %zu\n", index);
-
 	if (entry != NULL && table->compare_function(entry->key, key) == 0) {
 		*value = entry->value;
 
