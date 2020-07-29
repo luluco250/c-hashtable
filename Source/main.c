@@ -5,14 +5,6 @@
 #include <stdbool.h>
 #include "hashtable.h"
 
-int add(int a, int b) {
-	return a + b;
-}
-
-int sub(int a, int b) {
-	return a - b;
-}
-
 int main() {
 	const char* key0 = "foo";
 	const char* value0 = "bar";
